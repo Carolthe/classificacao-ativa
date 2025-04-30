@@ -1,0 +1,106 @@
+:root {
+    /* Colors */
+    --white: #ffffff;
+    --black: #000000;
+    --gray-950: #131518;
+    --gray-900: #262e38;
+    --gray-500: #969fad;
+    --orange-500: #fc7614;
+    --gradient-1: radial-gradient(#232a34 0%, #181e27 100%);
+
+
+    /* Spacing */
+    --spacing-300: 1.5rem; /* 24px */
+    --spacing-400: 2rem; /* 32px */
+
+    /* Font Sizes */
+    --font-size-md: 0.9375rem; /* 15px */
+    --font-size-2xl: 1.75rem; /* 28px */
+
+    /* Font Weights */
+    --font-regular: 400;
+    --font-bold: 700;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Overpass", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--gray-950);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 21.9375rem;
+    padding: 2.1563rem 1.9063rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.875rem;
+    background: var(--gradient-1);
+}
+.div-estrela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--gray-900);
+    margin-bottom: 30px;
+}
+h1{
+    color: white;
+    font-size: var(--font-size-2xl);
+}
+p{
+    font-size: var(--font-size-md);
+    font-weight: var(--font-regular);
+    line-height: 1.5rem;
+    color: var(--gray-500);
+    padding: 10px 5px 10px 5px;
+}
+.div-button-avaliacao{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 30px 0;
+}
+.button-avaliacao{
+    color: var(--gray-500);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-bold);
+    border-radius: 50%;
+    border: none;
+    background-color: var(--gray-900);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    width: 3.1875rem;
+    height: 3.1875rem;
+}
+.button-avaliacao:hover{
+    background-color: var(--orange-500);
+    color: var(--gray-900);
+}
+.button-avaliacao:active{
+    background-color: var(--white);
+    color: var(--gray-900);
+}
+.button-submit{
+    width: 21.9375rem;
+    font-size: var(--font-size-sm);
+    letter-spacing: 0.0106rem;
+    font-weight: var(--font-bold);
+    line-height: 1.5rem;
+    color: var(--gray-950);
+    background: var(--orange-500);
+    border-radius: 1.4063rem;
+    border: none;
+    padding: 0.7813rem 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    text-transform: uppercase;
+}
